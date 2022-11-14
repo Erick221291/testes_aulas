@@ -24,3 +24,8 @@ footer{
     font-style: italic;
 
 }
+#button{
+    background: rgba(224, 72, 72, 0.822);
+    border-radius: 5px;
+    
+}
