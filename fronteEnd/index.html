@@ -4,40 +4,51 @@
     <title>Ituring e-commerce</title>
     <link rel="icon" href="https://ituring.com.br/favicon.ico" />
     <script></script>
-    <style></style>
+    <style>
+      .header{
+        background-color: #0F1726;
+      }
+      .header__text-input::placeholder{
+        color: #c7c7c7;
+      }
+    </style>
   </head>
   <body>
     <!--Container geral-->
     <div>
         <!--Cabeçalho-->
-        <header>
+        <header class="header">
           <img src="https://ituring.com.br/favicon.ico" alt="ituring" />
           <!--Busca-->
           <div>
-            <input type="text"  title="Busca de produto" value="" placeholder="Buscar produtos"/>
+            <input type="text"  title="Busca de produto" value="" placeholder="Buscar produtos" class="header__text-input"/>
             <button>Buscar</button>
           </div>
-          <a href="./carrinho.html" title="Carrinho de compras">Carrinho de Compras</a>
+          <div>
+            <button class="header__cart">
+              <img alt="" src="https:ituring.com.br/favicon.ico" >
+            </button>
+          </div>
         </header>
         <!--Container-->
-        <main>
+        <main class="main-content">
           <!--ordenar-->
-          <section>
+          <section class="ordination-containter">
             <span>Ordenar por</span>
-            <select>
+            <select class="ordinattion-containter__select-input">
               <option value="price-desc">Menor Preço</option>
               <option value="price-asc">Maior Preço</option>
             </select>
           </section>
           <!--Containeer Cards-->
-          <section>
+          <section class="product-list">
             <!--Card-->
-            <article>
+            <article class="product-card">
               <img src="https://ituring.com.br/favicon.ico" alt="jogo de ferramenta Kit 129 Peças C/Maleta" />
               <hr />
-              <h3>R$128,00</h3>
-              <h4>jogo de ferramenta Kit 129 Peças C/Maleta + 40 Peças.</h4>
-              <p>
+              <h3 class="product-card__price">R$128,00</h3>
+              <h4 class="producti-card__title">jogo de ferramenta Kit 129 Peças C/Maleta + 40 Peças.</h4>
+              <p class="product-card_description">
                 Esse é um jogo de ferramentas extremamente útil para diversas
                 atividades, visto que o conjunto de peças é muito variado
               </p>
@@ -45,7 +56,7 @@
           </section>
         </main>
         <!--Rodapé-->
-        <footer>
+        <footer class="footer">
           <span>Copyringht © 2022 <strong>ITuring</strong> E-Commerce. Todos os direitos reservados</span>
         </footer> 
     </div>
