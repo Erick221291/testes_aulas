@@ -2,114 +2,13 @@
 <html lang="pt-BR">
   <head>
     <title>Ituring E-commerce</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assents/style.css">
     <link rel="icon" href="https://ituring.com.br/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script></script>
-    <style>
-      html, body, main{
-        height: 100%;
-      }
-      body{
-        margin: 0;
-        font-family: "Poppins, Courier, sans-serif";
-      }
-      /*header*/
-      .header{
-        background-color: #0F1726;
-        display: flex;
-        align-items: center;
-        justify-content:space-between ;/*calcula e espaça os elemento em proporção */
-       /* padding-top: 16px;
-        padding-bottom: 16px;
-        padding-right: 32px;
-        padding-left: 32px;*/
-        padding: 16px 32px 16px 32px; /*forma paratica para dimencionar top, right, bottom, left*/
-      }
-      
-      .header__text-input,.header__text-input::placeholder{
-        color: #c7c7c7;
-      }
-      .header__cart{
-        background-color: transparent;
-        border: none; /*retirar a borda do botão*/
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-right: 0px;
-        padding-left: 0px;
-        /*padding: 0px; - forma resumida pois todos os lados da borda são iguais*/
-      }
-      .header__text-input{
-        width: 500px;
-        border-radius: 4px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-right: 8px;
-        padding-left: 8px;
-      }
-      /*main-content */
-      .main-content {
-        background-color: #EDEDED;
-      }
-      /*main-content - ordenation-container*/
-      .ordination-containter{
-        display: flex;
-        justify-content: flex-end;
-        padding: 32px;
-              }
-      .ordenation-contente__label,
-      .ordinattion-containter__select-input{
-        font-size: 14px;
-      }
-           
-      .ordinattion-containter__select-input{
-        background-color: transparent;
-        border: none;
-        font-weight: bold;
-      }
-      /*main-content- product-card */
-      .product-list{
-        display: grid;
-        grid-template-columns:320px 320px 320px 320px ;
-        gap: 32px;
-        padding: 0 32px 32px 32px;
-      }
-      .product-card{
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0,2);
-        padding: 16px;
-      }
-      .product-list__image{
-        height: 220px;
-        width: 100%;
-        object-fit:contain ;
-      }
-      .product-card__price{
-        font-size: 32px;
-        margin: 0;
-      }
-      .producti-card__title{
-        font-size: 16px;
-        font-weight: normal;
-        margin: 10px 0;
-
-      }
-      .product-card_description{
-        font-size: 14px;
-        color: #ababab;
-      }
-      /*footer*/
-      .footer{
-        background-color: #fff;
-        display: flex;
-        padding: 32px;
-        justify-content: center;
-      }
-      
-    </style>
+    <style></style>
   </head>
   <body>
     <!--Container geral-->
@@ -120,7 +19,7 @@
           <!--Busca-->
           <div>
             <input type="text"  title="Busca de produto" value="" placeholder="Buscar produtos" class="header__text-input"/>
-            <button>Buscar</button>
+            
           </div>
           <div>
             <button class="header__cart">
@@ -130,6 +29,9 @@
         </header>
         <!--Container-->
         <main class="main-content">
+          <section class="search-container">
+            <input type="text"  title="Busca de produto" value="" placeholder="Buscar produtos" class="search-container__text-input"/>
+          </section>
           <!--ordenar-->
           <section class="ordination-containter">
             <span class="ordenation-contente__label">Ordenar por</span>

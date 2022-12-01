@@ -1,1 +1,126 @@
 @charset "UTF-8";/* essa regra evita probelmas com acentuação no idioma português Brasil*/
+html, body, main{
+    height: 100%;
+  }
+  body{
+    margin: 0;
+    font-family: "Poppins, Courier, sans-serif";
+  }
+  /*header*/
+  .header{
+    background-color: #0F1726;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;/*calcula e espaça os elemento em proporção */
+   /* padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;*/
+    padding: 16px 32px 16px 32px; /*forma paratica para dimencionar top, right, bottom, left*/
+  }
+  
+  .header__text-input,.header__text-input::placeholder{
+    color: #c7c7c7;
+  }
+  .header__cart{
+    background-color: transparent;
+    border: none; /*retirar a borda do botão*/
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    /*padding: 0px; - forma resumida pois todos os lados da borda são iguais*/
+  }
+  .header__text-input ,
+  .search-container__text-input{
+    width: 500px;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .search-container__text-input{
+    width: 88%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .search-container{
+    display: flex;
+    justify-content: center;
+  }
+  .search-container__text-input{
+    display: none;
+  }
+  @media screen and (max-width:900px){
+    .header__text-input{
+        display: none;
+    }
+    .search-container__text-input{
+        display: block;
+        width: 80%;
+    }
+  }
+
+  /*main-content */
+  .main-content {
+    background-color: #EDEDED;
+    height: auto;
+  }
+  /*main-content - ordenation-container*/
+  .ordination-containter{
+    display: flex;
+    justify-content: flex-end;
+    padding: 32px;
+          }
+  .ordenation-contente__label,
+  .ordinattion-containter__select-input{
+    font-size: 14px;
+  }
+       
+  .ordinattion-containter__select-input{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+  }
+  /*main-content- product-card */
+  .product-list{
+    
+   max-width: 1280px;
+    margin: 0 auto;    
+  }
+  .product-card{
+    background-color: #fff;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0,2);
+    padding: 16px;
+    margin: 16px;
+  }
+  .product-list__image{
+    height: 220px;
+    width: 100%;
+    object-fit:contain ;
+  }
+  .product-card__price{
+    font-size: 32px;
+    margin: 0;
+  }
+  .producti-card__title{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0;
+
+  }
+  .product-card_description{
+    font-size: 14px;
+    color: #ababab;
+  }
+  /*footer*/
+  .footer{
+    background-color: #fff;
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+  }
