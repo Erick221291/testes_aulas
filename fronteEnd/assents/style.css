@@ -1,4 +1,4 @@
-@charset "UTF-8";/* essa regra evita probelmas com acentuação no idioma português Brasil*/
+@charset "UTF-8";/* essa regra evita problemas com acentuação no idioma português Brasil*/
 html, body, main{
     height: 100%;
   }

@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drid</title>
+    <title>Grid</title>
+    <style>
+      body{
+        display: grid;
+        grid-template-areas:
+        "cabecalho cabecalho cabecalho"
+        "principal principal lateral"
+        "rodape rodape rodape ";
+        gap: 1rem;
+        grid-template-rows: auto 90vh auto;
+        grid-template-columns: auto auto auto;
+               
+      }
+   
+       .cabecalho {
+       grid-area: cabecalho;
+       background-color: #EACCF0;
+      }
+
+     .lateral {
+      grid-area: lateral;
+      background-color: #E8C8BC;
+     }
+     .principal {
+      grid-area: principal;
+      background-color: #D0E1F2;
+     }
+     .rodape {
+      grid-area: rodape;
+      background-color: #B4DBBB;
+     }
+
+
+    </style>
 </head>
 <body>
     <header class="cabecalho">Header</header>
-    <main class="princippal">Main</main>
+    <main class="principal">Main</main>
     <aside class="lateral">Aside</aside>
     <footer class="rodape">Footer</footer>
 </body>
